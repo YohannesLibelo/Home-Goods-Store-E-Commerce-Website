@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+</head>
+
+<body>
+
+    <header>
+        <!--
+            the nav bar of the header contains the search bar, the logo , favourite items, account and checkout.
+            The checkout image also functions as a button/nav and can be acessed by clicking on it
+        -->
+
+        <div class="mainhead">
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Search anything" name="Q">
+                <button type="submit"> <img id="button" src="Pictures/search.png" alt="button"></button>
+            </form>
+            <a href="#default" class="mainlogo">Merkato</a>
+            <div class="header-right">
+                <button type="submit"> <img id="fav"  class="imo" src="Pictures/favorite.png" alt="favourite"></button>
+                <button type="submit"> <img id="user" class="imo" src="Pictures/user.png" alt="user"></button>
+                <button type="submit"> <img id="checkout" class="imo" src="Pictures/checkout.png" alt="checkout" onclick="window.location.href = 'Cart/cart.html'"> </button>
+            </div>
+
+
+
+        </div>
+        <div class="header">
+<!--
+    this is the main NAV bar and includes all the required nav pages which are the furniture, decor and Kitchenware pages
+    each of them will open a new page. However once you are in those pages you have to click the "to go back"  arrow button to return to home and 
+    go to a different page. All the navs are only acessible from the home page. The home nav when clicked from a different page might not function.
+-->
+            <ul class="navlinks">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="Furniture/Furniture.html">Furniture </a></li>
+                <li><a href="decor/decor.html">Decor </a></li>
+                <li><a href="Kitchen/Kitchen.html">Kitchenware </a></li>
+
+            </ul>
+        </div>
+        <h1 style="color: rgb(14, 13, 13);">Revive your Home </h1>
+    </header>
+
+    <!--
+        these are my home page entrance images with alternative text
+    -->
+    <div class="image-grid">
+        <img class="image-grid-col-2 image-grid-row-2" src="pictures/plant.jpg" alt="architecture">
+        <img src="pictures/sofa.jpg" alt="sofa">
+        <img src="pictures/Home.jpg" alt="Home">
+        <img src="pictures/bedroom.jpg" alt="bedroom">
+        <img src="pictures/libr.jpg" alt="libr">
+    </div>
+
+    <section id="boxx">
+        <div id="container2">
+            <header>
+                <h1>come visit us at our new location</h1>
+            </header>
+            <section>
+
+                <div class="wrapper">
+                    <blockquote>
+                        Join us for the re-opening celebration at our new location to kick off national furniture month.
+                        complete a scavenger hunt around the shop for a chance to win prizes! Shop our selection of
+                        kitchenware and décor . Check out upcoming promos!!
+                    </blockquote>
+                    <div class="containermap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15608.670681706764!2d39.046719100000004!3d12.0319753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16413eee814f2d03%3A0xf27414e782ae4b62!2sLalibela%2C%20Ethiopia!5e0!3m2!1sen!2sza!4v1678311963735!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                </div>
+
+            </section>
+            <aside>
+                <img id="plasma" src="Pictures/store.jpg" alt="plates">
+            </aside>
+        </div>
+    </section>
+
+    <div class="service">
+        <div class="title">
+            <h3>Our sevices </h3>
+        </div>
+        <div class="box">
+            <div class="cardd">
+                <h5>Our impact</h5>
+                <div class="pra">
+                    <p>We are the most sustainable home furnishings retailer in the Country—the only home 
+                        retailer on Time’s 100 Most Sustainable African Companies list for the past four years.
+                        We also ensure  workers fair wages, healthy working conditions and community development.
+                    </p>
+                    <p style="text-align: center; color: black;">
+                        <a class="button" href="" target="">Read More</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="cardd">
+<!--
+    Information about the online store
+    i.e When compiling information aboutthe website's history and policy I have used https://www.westelm.com/ conten't as an inspiration.
+-->
+                <h5>About us</h5>
+                <div class="pra">
+                    <p>Born in Cape Town in 2002, Merkato is a global design company dedicated to transforming people’s lives +
+                         spaces through creativity, style + purpose. With a commitment to great design, approachability + community, 
+                         Merkato aims to elevate the everyday—at home, at work and away.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="" target="">Read More</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="cardd">
+
+                <h5>Shops</h5>
+                <div class="pra">
+                    <p>Our sustainability relies heavily on our ability to generate our own income through trading. Our
+                        shops and bakery generate a significant portion of our income and provide work opportunities for
+                        our beneficiaries.</p>
+                    <p style="text-align: center; ">
+                        <a class="button" href="" target=""> Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+     The links provide  a code snippet to a similar  problem. I have used the HTML and CSS files to guide me 
+     in creating the footer for this page. Specially to getting the social media handles. 
+    This was adapted from a google doc and a youtube video on  2023/03/03 from  the follwoing  
+     websites : 
+     https://drive.google.com/file/d/12DNl4xsajW8Crzf5YqMwDksH_1y0jwhk/view && https://www.youtube.com/watch?v=YOb67OKw62s
+    */
+    -->
+    <footer>
+        <div class="footer">
+            <div class="containero">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Physical Stores</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+
+                        <!--
+                            this footer link takes you to the Contact Us Page
+                        -->
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="contactUs/contactUs.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
